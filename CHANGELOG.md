@@ -1,8 +1,48 @@
 # Restreamer
 
+## 2.12.0
+
+### UI v1.13.0 > v1.14.0
+
+-   Add wettercom service
+-   Add option to select which channels will be displayed on the playersite ([#392](https://github.com/datarhei/restreamer/issues/392), [#800](https://github.com/datarhei/restreamer/issues/800))
+-   Mod updates public videojs >v8
+-   Fix erroneous filter setting
+-   Fix encoded address
+-   Fix double -filter parameter when encoder sets filter ([#787](https://github.com/datarhei/restreamer/issues/787))
+-   Fix Docker build ([#64](https://github.com/datarhei/restreamer-ui/issues/64))
+
+### 🧡💚💜 Thank you to all Patrons and donors
+
+-   Michael Shepherd
+-   Jacob Fritsche
+-   Martin H.
+-   Paulo Gonçalves
+-   Philipp Burkart
+-   Mark Stephens
+-   Fabian Stoll
+-   Perry Johnson
+-   Alex O'Carroll
+-   Fiberian
+-   Ivan Hašek
+-   krischan941
+-   Doug Roberts
+-   Bassim Charafeddine
+-   josue osorto
+-   Raketenbaum
+-   Byron Garcia
+-   Jeff Moe
+-   Ramakrishna Chillara
+-   Eduardo Sarabia
+-   Giovanni Russo
+-   Gioele Cerati
+-   Blueman2 (Robert G. Pearse)
+-   Alex Fuhr
+-   Frank Schulz
+
 ## 2.11.0
 
-### v1.12.0 > v1.13.0
+### UI v1.12.0 > v1.13.0
 
 -   Add to allow stream hints in case probing fails
 -   Mod enables ff-loglevel and prepares the logging component
