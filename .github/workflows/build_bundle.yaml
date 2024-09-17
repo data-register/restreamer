@@ -51,13 +51,13 @@ jobs:
             matrix:
                 include:
                     - ui: ${{ needs.versions.outputs.uiversion }}
-                      core: core${{ needs.versions.outputs.coreversion }}-alpine3.19
-                      ffmpeg: ffmpeg6.1.1-alpine3.19
+                      core: core${{ needs.versions.outputs.coreversion }}-alpine3.20
+                      ffmpeg: ffmpeg6.1.1-alpine3.20
                       platforms: linux/amd64,linux/arm64,linux/arm/v7
                       prefix:
                     - ui: ${{ needs.versions.outputs.uiversion }}
-                      core: core${{ needs.versions.outputs.coreversion }}-alpine3.19
-                      ffmpeg: ffmpeg6.1.1-rpi-alpine3.19
+                      core: core${{ needs.versions.outputs.coreversion }}-alpine3.20
+                      ffmpeg: ffmpeg6.1.1-rpi-alpine3.20
                       platforms: linux/arm64,linux/arm/v7
                       prefix: rpi-
                     - ui: ${{ needs.versions.outputs.uiversion }}
