@@ -32,7 +32,12 @@ jobs:
                       name: vaapi-dev
                     - ui: dev
                       core: core-dev-ubuntu22.04
-                      ffmpeg: ffmpeg6.1.1-cuda-ubuntu22.04-cuda11.7.1
+                      ffmpeg: ffmpeg6.1.1-cuda-ubuntu22.04-cuda11.8.0
+                      platforms: linux/amd64
+                      name: cuda-dev
+                    - ui: dev
+                      core: core-dev-ubuntu24.04
+                      ffmpeg: ffmpeg6.1.1-cuda-ubuntu24.04-cuda12.6.1
                       platforms: linux/amd64
                       name: cuda-dev
         steps:
