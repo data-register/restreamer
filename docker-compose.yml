@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  restreamer:
+    image: datarhei/restreamer:latest
+    container_name: restreamer
+    ports:
+      - "8081:8080"  # Уеб интерфейс
+      - "8181:8181"  # Допълнителен порт за настройка
+      - "1935:1935"  # RTMP поток
+      - "1936:1936"  # RTMPS поток
+      - "6000:6000/udp"  # UDP за видео стрийминг
+    environment:
+      - CORE_CONFIGFILE=/core/config/config.json  # Път за конфигурационния файл
+      - CORE_DB_DIR=/core/config                   # Директория за конфигурация
+      - CORE_STORAGE_DISK_DIR=/core/data           # Директория за данни
+      - CORE_ROUTER_UI_PATH=/core/ui               # Път за UI на Restreamer
+      - LOG_LEVEL=info                             # Ниво на логване
+    volumes:
+      - ./config:/core/config
+      - ./data:/core/data
+    restart: unless-stopped
+    networks:
+      - coolify-network  # Свързване към Coolify мрежата
+
+networks:
+  coolify-network:
+    external: true  # Използвай Coolify мрежата
