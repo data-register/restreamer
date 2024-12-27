@@ -21,8 +21,8 @@ services:
       - ./data:/core/data
     restart: unless-stopped
     networks:
-      - coolify-network  # Свързване към Coolify мрежата
+      - coolify  # Свързване към Coolify мрежата
 
 networks:
-  coolify-network:
+  coolify:
     external: true  # Използвай Coolify мрежата
